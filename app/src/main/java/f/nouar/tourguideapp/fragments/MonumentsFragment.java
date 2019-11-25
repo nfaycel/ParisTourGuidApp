@@ -1,4 +1,4 @@
-package f.nouar.tourguideapp.ui.main;
+package f.nouar.tourguideapp.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

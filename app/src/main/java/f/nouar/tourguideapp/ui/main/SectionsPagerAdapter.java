@@ -3,12 +3,12 @@ package f.nouar.tourguideapp.ui.main;
 import android.content.Context;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import f.nouar.tourguideapp.R;
+import f.nouar.tourguideapp.fragments.*;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
