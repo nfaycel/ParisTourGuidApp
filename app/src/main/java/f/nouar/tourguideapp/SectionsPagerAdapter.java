@@ -1,4 +1,4 @@
-package f.nouar.tourguideapp.ui.main;
+package f.nouar.tourguideapp;
 
 import android.content.Context;
 

@@ -3,12 +3,9 @@ package f.nouar.tourguideapp;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-
-import f.nouar.tourguideapp.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabs;
