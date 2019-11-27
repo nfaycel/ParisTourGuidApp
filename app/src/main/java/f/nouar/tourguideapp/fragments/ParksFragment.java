@@ -32,8 +32,9 @@ public class ParksFragment extends Fragment {
         Park park5 = new Park("Champ de Mars","Landscaped park with paths & trees, bird life, extensive lawns & a children's play area.",R.drawable.park5_champ_de_mars);
         Park park6 = new Park("Bois de Boulogne","Former royal hunting grounds, now a huge public park with lakes, nature trails & botanical gardens.",R.drawable.park6_bois_de_boulogne);
         Park park7 = new Park("Parc de Belleville","Park created in 1988, with a playground, open-air theater, vineyard & museum about the city's air.",R.drawable.park7_parc_de_belleville);
+        Park park8 = new Park("Jardin des Plantes","Vast park with plant species grown in botanical & alpine gardens & restored 19th-century hothouses.",R.drawable.park8_jardin_des_plantes);
         Park park9 = new Park("La Villette","Series of army museums including a church & the tombs of many famed officers, including Napoleon.",R.drawable.park9_la_villette);
-        Park[] parks = {park1,park2,park3,park4,park5,park6,park7,park9,park3};
+        Park[] parks = {park1,park2,park3,park4,park5,park6,park7,park8,park9};
         mAdapter = new AdapterPark(parks);
         recyclerView.setAdapter(mAdapter);
         return view;
