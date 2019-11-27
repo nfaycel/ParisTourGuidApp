@@ -25,22 +25,22 @@ public class MonumentsFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-        Monument monument1 = new Monument("Sainte-Chapelle",
-                "Ornate, 13th-century, Gothic chapel with relics & notable stained-glass windows of biblical scenes.", R.drawable.monument1_sainte_chapelle);
-        Monument monument2 = new Monument("Panthéon",
-                "18th-century mausoleum with colonnaded facade, housing remains of notable French citizens.", R.drawable.monument2_panth_on);
-        Monument monument3 = new Monument("Sacré-Cœur",
-                "Iconic, domed white church, completed in 1914, with interior mosaics, stained-glass windows & crypt.", R.drawable.monument3_sacr__c_ur);
-        Monument monument4 = new Monument("Conciergerie",
-                "Iconic triumphal arch built to commemorate Napoleon's victories, with an observation deck.", R.drawable.monument4_conciergerie);
-        Monument monument5 = new Monument("Arc de Triomphe",
-                "Iconic triumphal arch built to commemorate Napoleon's victories, with an observation deck.", R.drawable.monument5_arc_de_triomphe);
-        Monument monument6 = new Monument("Luxor Obelisk",
-                "Ancient Egyptian granite obelisk, originally from Luxor, with hieroglyphs & a gold-leafed top.", R.drawable.monument6_luxor_obelisk);
-        Monument monument7 = new Monument("Saint-Jacques Tower",
-                "The only remaining part of a 16th-century church that was destroyed during the French Revolution.", R.drawable.monument7_saint_jacques_tower);
-        Monument monument8 = new Monument("Grand Palais",
-                "Art nouveau hall with domed glass roof, built in 1900, hosting exhibitions and cultural events.", R.drawable.monument8_grand_palais);
+        Monument monument1 = new Monument(getResources().getString(R.string.monument1_title),
+                getResources().getString(R.string.monument1_description), R.drawable.monument1_sainte_chapelle);
+        Monument monument2 = new Monument(getResources().getString(R.string.monument2_title),
+                getResources().getString(R.string.monument2_description), R.drawable.monument2_panth_on);
+        Monument monument3 = new Monument(getResources().getString(R.string.monument3_title),
+                getResources().getString(R.string.monument3_description), R.drawable.monument3_sacr__c_ur);
+        Monument monument4 = new Monument(getResources().getString(R.string.monument4_title),
+                getResources().getString(R.string.monument4_description), R.drawable.monument4_conciergerie);
+        Monument monument5 = new Monument(getResources().getString(R.string.monument5_title),
+                getResources().getString(R.string.monument5_description), R.drawable.monument5_arc_de_triomphe);
+        Monument monument6 = new Monument(getResources().getString(R.string.monument6_title),
+                getResources().getString(R.string.monument6_description), R.drawable.monument6_luxor_obelisk);
+        Monument monument7 = new Monument(getResources().getString(R.string.monument7_title),
+                getResources().getString(R.string.monument7_description), R.drawable.monument7_saint_jacques_tower);
+        Monument monument8 = new Monument(getResources().getString(R.string.monument8_title),
+                getResources().getString(R.string.monument8_description), R.drawable.monument8_grand_palais);
         Monument[] monuments = {monument1, monument2, monument3, monument4, monument5, monument6, monument7, monument8, monument3};
         mAdapter = new AdapterMonument(monuments);
         recyclerView.setAdapter(mAdapter);
