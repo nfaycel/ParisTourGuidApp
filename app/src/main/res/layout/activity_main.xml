@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +12,6 @@
         app:contentInsetLeft="0dp"
         app:contentInsetStart="0dp"
         android:theme="@style/AppTheme.AppBarOverlay">
-
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -32,14 +30,10 @@
             app:tabGravity="center"
             app:tabMode="scrollable"
             android:background="?attr/colorPrimary" />
-
-
     </com.google.android.material.appbar.AppBarLayout>
-
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

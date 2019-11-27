@@ -9,14 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import f.nouar.tourguideapp.fragments.*;
 
-/**
- * A [FragmentPagerAdapter] that returns a fragment corresponding to
- * one of the sections/tabs/pages.
- */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-
-    //private static final int[] TAB_TITLES = new int[]{R.string.national_parks, R.string.historical_monuments,R.string.restaurants, R.string.hotels};
     private final Context mContext;
     private static final int[] TAB_TITLES = new int[]{R.string.national_parks, R.string.historical_monuments,R.string.restaurants,R.string.hotels};
 
@@ -45,7 +38,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         return mContext.getResources().getString(TAB_TITLES[position]);
     }
-
 
     @Override
     public int getCount() {

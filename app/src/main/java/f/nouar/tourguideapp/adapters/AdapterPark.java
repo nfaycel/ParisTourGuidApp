@@ -1,6 +1,5 @@
 package f.nouar.tourguideapp.adapters;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,8 +7,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.DrawableRes;
 import androidx.recyclerview.widget.RecyclerView;
 import f.nouar.tourguideapp.R;
 
@@ -36,7 +33,7 @@ public class AdapterPark extends RecyclerView.Adapter<AdapterPark.ViewHolder> {
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),"click on item: "+myListData.getDescription(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(),myListData.getDescription(),Toast.LENGTH_SHORT).show();
             }
         });
     }
